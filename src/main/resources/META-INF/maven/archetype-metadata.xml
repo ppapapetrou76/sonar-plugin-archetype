@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="sonar-plugin"
+                      xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.properties</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.erb</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <requiredProperties>
+    <requiredProperty key="groupId">
+      <defaultValue>org.codehaus.sonar-plugins</defaultValue>
+    </requiredProperty>
+   
+    <requiredProperty key="pluginKey">
+    </requiredProperty>
+    <requiredProperty key="pluginName">
+    </requiredProperty>
+    <requiredProperty key="pluginDescription">
+    </requiredProperty>
+    <requiredProperty key="sonarVersion">
+    </requiredProperty>
+   
+    <requiredProperty key="version">
+      <defaultValue>0.1-SNAPSHOT</defaultValue>
+    </requiredProperty>
+
+    <requiredProperty key="package">
+      <defaultValue>org.sonar.plugins</defaultValue>
+    </requiredProperty>
+
+    <requiredProperty key="organizationName">
+    </requiredProperty>
+
+    <requiredProperty key="inceptionYear">
+    </requiredProperty>
+   
+   
+   
+  </requiredProperties>
+</archetype-descriptor>
